@@ -152,5 +152,123 @@ console.log(age1, age2, age3);
 
 // Basic Array Operations (Methods)
 
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add elements
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
+console.log(friends);
+
+// Remove elements
+friends.pop(); // Last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // First
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+	console.log('You have a friend called Steven');
+}
+
+// Coding Challenge
+
+function calcTip(bill) {
+	return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+console.log(calcTip(100)); // result: 15
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, total);
+;
+
+// Explanation of the result:
+// 1. calcTip(125) → 125 * 0.15 = 18.75
+// 2. calcTip(555) → 555 * 0.2 = 111
+// 3. calcTip(44) → 44 * 0.2 = 8.8
+
+// Bills, tips and totals will be:
+
+// Bills: [125, 555, 44]
+// Tips: [18.75, 111, 8.8]
+// Total: [143.75, 666, 52.8]
+
+
+
+// Introduction to Objects
+
+const anniesArray = [
+	'Annie',
+	'Kamenova',
+	2037 - 1991,
+	'teacher',
+	['Noah', 'Joanne', 'Asen']
+];
+
+const annies = {
+	firstName: 'Annie',
+	lastName: 'Kamenova',
+	age: 2037 - 1991,
+	job: 'teacher',
+	friends: ['Noah', 'Joanne', 'Asen']
+};
+
+console.log(anniesArray, annies);
+
+
+
+// Dot vs. Bracket Notation
+
+const noah = {
+	firstName: 'Noah',
+	lastName: 'Ramos',
+	age: 2037 - 1991,
+	job: 'pastor',
+	friends: ['Vladi', 'Iva', 'Andrea']
+};
+
+console.log(noah);
+
+console.log(noah.lastName);
+console.log(noah['lastName']);
+
+const nameKey = 'Name';
+console.log(noah['first' + nameKey]);
+console.log(noah['last' + nameKey]);
+
+// console.log(noah.'last' + nameKey);
+
+const interestedln = prompt('What do you want to know about Noah? Chose between firstName, lastName, age, job, and friends');
+
+if (noah[interestedln]) {
+	console.log(noah[interestedln]);
+} else {
+	console.log('Wrong request! Choose between firstName, lastName, age, job, friends');
+}
+
+noah.location = 'America';
+noah['twitter'] = '@noahramos';
+console.log(noah);
+
+
+
+
 
 
