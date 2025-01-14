@@ -16,7 +16,7 @@
 // Functions
 
 function logger() {
-	console.log('My name is Annie');
+	console.log('My name is Annie'); // it's just a message
 }
 
 // calling / running / invoking function
