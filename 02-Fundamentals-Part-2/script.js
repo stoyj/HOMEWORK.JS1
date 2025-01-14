@@ -236,36 +236,62 @@ console.log(anniesArray, annies);
 
 // Dot vs. Bracket Notation
 
-const noah = {
-	firstName: 'Noah',
-	lastName: 'Ramos',
-	age: 2037 - 1991,
-	job: 'pastor',
-	friends: ['Vladi', 'Iva', 'Andrea']
-};
+// const noah = {
+// 	firstName: 'Noah',
+// 	lastName: 'Ramos',
+// 	age: 2037 - 1991,
+// 	job: 'pastor',
+// 	friends: ['Vladi', 'Iva', 'Andrea']
+// };
 
-console.log(noah);
+// console.log(noah);
 
-console.log(noah.lastName);
-console.log(noah['lastName']);
+// console.log(noah.lastName);
+// console.log(noah['lastName']);
 
-const nameKey = 'Name';
-console.log(noah['first' + nameKey]);
-console.log(noah['last' + nameKey]);
+// const nameKey = 'Name';
+// console.log(noah['first' + nameKey]);
+// console.log(noah['last' + nameKey]);
 
 // console.log(noah.'last' + nameKey);
 
-const interestedln = prompt('What do you want to know about Noah? Chose between firstName, lastName, age, job, and friends');
+// const interestedln = prompt('What do you want to know about Noah? Chose between firstName, lastName, age, job, and friends');
 
-if (noah[interestedln]) {
-	console.log(noah[interestedln]);
+// if (noah[interestedln]) {
+// 	console.log(noah[interestedln]);
+// } else {
+// 	console.log('Wrong request! Choose between firstName, lastName, age, job, friends');
+// }
+
+// noah.location = 'America';
+// noah['twitter'] = '@noahramos';
+// console.log(noah);
+
+
+// Solution without prompt
+const noah = {
+	firstName: 'Noah',
+	lastName: 'Ramos',
+	age: 25,
+	job: 'Developer',
+	friends: ['Vladi', 'Iva', 'Andrea']
+};
+
+const interestedIn = 'job'; // (Можеш да промениш това на 'age', 'friends' и т.н.)) You can change this to 'age', 'friends' etc.
+
+if (noah[interestedIn]) {
+	console.log(noah[interestedIn]);
 } else {
 	console.log('Wrong request! Choose between firstName, lastName, age, job, friends');
 }
 
 noah.location = 'America';
 noah['twitter'] = '@noahramos';
+
 console.log(noah);
+
+
+
 
 
 
