@@ -43,19 +43,19 @@ const num = Number('23');
 // Function Declarations vs. Expressions
 
 // Function declaration
-function calcAge1(birthYeah) {
-	return 2037 - birthYeah;
-}
-const age1 = calcAge1(1991);
+// function calcAge1(birthYeah) {
+// 	return 2037 - birthYeah;
+// }
+// const age1 = calcAge1(1991);
 
 // Function expression
 // Function expression is much clearer to me
-const calcAge2 = function (birthYeah) {
-	return 2037 - birthYeah;
-}
-const age2 = calcAge2(1991);
+// const calcAge2 = function (birthYeah) {
+// 	return 2037 - birthYeah;
+// }
+// const age2 = calcAge2(1991);
 
-console.log(age1, age2);
+// console.log(age1, age2);
 
 
 
@@ -109,6 +109,48 @@ console.log(yearsUntilRetirement(1950, 'Mike'));
 
 
 // Introduction to Arrays
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friendes = ['Michael', 'Steven', 'Peter'];
+console.log(friendes);
+
+const y = new Array(1991, 1984, 2008, 2020);
+
+console.log(friendes[0]);
+console.log(friendes[2]);
+
+console.log(friendes.length);
+console.log(friendes[friendes.length - 1]);
+
+// friends[2] = 'Jay';
+// console.log(friends);
+// // friends = ['Bob', 'Alice'];
+
+// const firstName = 'Jonas';
+// const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+
+// console.log(jonas);
+// console.log(jonas.length);
+
+
+// Exercise
+const calcAgeCal = function (birthYeah) {
+	return 2037 - birthYeah;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAgeCal(years[0]);
+const age2 = calcAgeCal(years[1]);
+const age3 = calcAgeCal(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+
+
+// Basic Array Operations (Methods)
 
 
 
