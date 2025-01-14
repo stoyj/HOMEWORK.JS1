@@ -9,8 +9,8 @@
 // if (hasDriversLicense) console.log('I can drive :D');
 
 
-// const interface = 'Audio';
-// const privete = 534;
+// const interface = 'Audio'; // Wrong
+// const privete = 534; // Wrong
 
 
 // Functions
