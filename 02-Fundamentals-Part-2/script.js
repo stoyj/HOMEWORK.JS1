@@ -502,6 +502,7 @@ for (let exercise = 1; exercise < 4; exercise++) {
 }
 
 
+
 // The while Loop
 
 for (let rep = 1; rep <= 10; rep++) {
