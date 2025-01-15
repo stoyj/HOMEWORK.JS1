@@ -590,3 +590,4 @@ console.log('Average total:', calcAverage(totals));
 
 
 
+
