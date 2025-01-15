@@ -477,7 +477,6 @@ for (let i = 0; i < maria.length; i++) {
 
 // Looping Backwards and Loops in Loops
 
-// Looping Backwards and Loops in Loops
 const eli = [
 	'Eli',
 	'Schmedtmann',
