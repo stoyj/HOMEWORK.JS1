@@ -1,41 +1,39 @@
-'use strict';
+"use strict";
 
 // Linking a JavaScript File
 let js = "amazing";
-console.log(40 + 8 + 23 - 10);
-
+console.log(40 + 8 + 23 - 10); /// TODO change with varaibles
 
 // Values and Variables
 // let firstName = 'Matilda';
 // console.log(firstName);
 
-
+// BUG  video  LEC TODO FIXME
 
 // Variable name conventions
-let jonas_matilda = 'JM';
+let jonas_matilda = "JM";
 let $function = 27;
 
 console.log(jonas_matilda);
 console.log($function);
 
-let person = 'jonas';
+let person = "jonas";
 let PI = 3.1415;
 
 console.log(person);
 console.log(PI);
 
-let myFirstJob = 'Coder';
-let myCurrentJob = 'Teacher';
+let myFirstJob = "Coder";
+let myCurrentJob = "Teacher";
 
 console.log(myFirstJob);
 console.log(myCurrentJob);
 
-let job1 = 'programmer';
-let job2 = 'teacher';
+let job1 = "programmer";
+let job2 = "teacher";
 
 console.log(job1);
 console.log(job2);
-
 
 // Date Types
 let javascriptsFun = true;
@@ -46,7 +44,7 @@ console.log(typeof javascriptsFun);
 // console.log(typeof 23);
 // console.log(typeof 'jonas');
 
-javascriptsFun = 'YES';
+javascriptsFun = "YES";
 console.log(typeof javascriptsFun);
 
 // let year;
@@ -69,7 +67,6 @@ console.log(typeof null);
 
 // lastName = 'Kamenova';
 // console.log(lastName);
-
 
 // Basic Operators
 // Math operators
@@ -114,7 +111,6 @@ console.log(a, y);
 const averageAge = (ageAnnie + ageDavid) / 2;
 console.log(ageAnnie, ageDavid, averageAge);
 
-
 // Coding Challenge #1
 
 /* 
@@ -140,7 +136,9 @@ let bmiJohn1 = massJohn1 / heightJohn1 ** 2;
 let markHigherBMI1 = bmiMark1 > bmiJohn1;
 
 console.log("Test Data 1:");
-console.log(`Mark's BMI: ${bmiMark1.toFixed(2)}, John's BMI: ${bmiJohn1.toFixed(2)}`);
+console.log(
+  `Mark's BMI: ${bmiMark1.toFixed(2)}, John's BMI: ${bmiJohn1.toFixed(2)}`
+);
 console.log(`Does Mark have a higher BMI? ${markHigherBMI1}`);
 
 // Test Data 2
@@ -155,9 +153,10 @@ let bmiJohn2 = massJohn2 / heightJohn2 ** 2;
 let markHigherBMI2 = bmiMark2 > bmiJohn2;
 
 console.log("\nTest Data 2:");
-console.log(`Mark's BMI: ${bmiMark2.toFixed(2)}, John's BMI: ${bmiJohn2.toFixed(2)}`);
+console.log(
+  `Mark's BMI: ${bmiMark2.toFixed(2)}, John's BMI: ${bmiJohn2.toFixed(2)}`
+);
 console.log(`Does Mark have a higher BMI? ${markHigherBMI2}`);
-
 
 // Strings and Template Literals
 // const firstName = 'Jonas';
@@ -173,9 +172,11 @@ console.log(`Does Mark have a higher BMI? ${markHigherBMI2}`);
 
 console.log(`Just a regular string...`);
 
-console.log('String with \n\
+console.log(
+  "String with \n\
 multiple \n\
-lines');
+lines"
+);
 
 console.log(`String
 	multiple
@@ -195,9 +196,9 @@ const birthYear = 2012;
 
 let century;
 if (birthYear <= 2000) {
-	century = 20;
+  century = 20;
 } else {
-	century = 21;
+  century = 21;
 }
 console.log(century);
 
@@ -225,58 +226,62 @@ const johnBMI = johnMass / johnHeight ** 2;
 
 // Compare BMIs and print a message
 if (markBMI > johnBMI) {
-	console.log(`Mark's BMI (${markBMI.toFixed(1)}) is higher than John's (${johnBMI.toFixed(1)})!`);
+  console.log(
+    `Mark's BMI (${markBMI.toFixed(
+      1
+    )}) is higher than John's (${johnBMI.toFixed(1)})!`
+  );
 } else if (johnBMI > markBMI) {
-	console.log(`John's BMI (${johnBMI.toFixed(1)}) is higher than Mark's (${markBMI.toFixed(1)})!`);
+  console.log(
+    `John's BMI (${johnBMI.toFixed(
+      1
+    )}) is higher than Mark's (${markBMI.toFixed(1)})!`
+  );
 } else {
-	console.log(`Both Mark and John have the same BMI (${markBMI.toFixed(1)})!`);
+  console.log(`Both Mark and John have the same BMI (${markBMI.toFixed(1)})!`);
 }
-
 
 // Type Conversion and Coercion
 
 // type conversion
-const inputYear = '1991';
+const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
 
-console.log(Number('Jonas'));
+console.log(Number("Jonas"));
 console.log(typeof NaN);
 
 console.log(String(23), 23);
 
-
 // type coercion
-console.log('I am ' + 23 + ' years old');
-console.log('23' - '10' - 3);
-console.log('23' / '2');
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
 
-let n = '1' + 1; // '11'
+let n = "1" + 1; // '11'
 n = n - 1;
 console.log(n);
-
 
 // Truthy and Falsy Values
 // 5 falsy values: 0, '', undefined, null, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
+console.log(Boolean("Jonas"));
 console.log(Boolean({}));
-console.log(Boolean(''));
-
+console.log(Boolean(""));
 
 const money = 100;
 if (money) {
-	console.log("Don't spend it all ;)");
+  console.log("Don't spend it all ;)");
 } else {
-	console.log('You should get a job!');
+  console.log("You should get a job!");
 }
 
 let height = 0;
 if (height) {
-	console.log('YAY! Height is defined');
+  console.log("YAY! Height is defined");
 } else {
-	console.log('Height is UNDEFINED');
+  console.log("Height is UNDEFINED");
 }
 
 // Equality Operators: == vs. ===
@@ -301,7 +306,6 @@ if (height) {
 
 // if (favourite !== 23) console.log('Why not 23?');
 
-
 // Logical Operators
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
@@ -320,85 +324,81 @@ const isTired = false; // C
 console.log(hasDriversLicense && hasGoodVision && isTired);
 
 if (hasDriversLicense && hasGoodVision && !isTired) {
-	console.log('Sarah is able to drive!');
+  console.log("Sarah is able to drive!");
 } else {
-	console.log('Someone else should drive...');
+  console.log("Someone else should drive...");
 }
-
 
 // The switch Statement
 
-const day = 'friday';
+const day = "friday";
 
 switch (day) {
-	case 'monday': // day === 'monday'
-		console.log('Plan course structure');
-		console.log('Go to coding meetup');
-		break;
-	case 'tuesday':
-		console.log('Prepare theory videos');
-		break;
-	case 'wednesday':
-	case 'thursday':
-		console.log('Write code examples');
-		break;
-	case 'friday':
-		console.log('Record videos');
-		break;
-	case 'saturday':
-	case 'sunday':
-		console.log('Enjoy the weekend :D');
-		break;
-	default:
-		console.log('Not a valid day!');
+  case "monday": // day === 'monday'
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend :D");
+    break;
+  default:
+    console.log("Not a valid day!");
 }
 
-if (day === 'monday') {
-	console.log('Plan course structure');
-	console.log('Go to codinng meetup');
-} else if (day === 'tuesday') {
-	console.log('Prepare theory videos');
-} else if (day === 'wednesday' || day === 'thursday') {
-	console.log('Write code examples');
-} else if (day === 'friday') {
-	console.log('Record videos');
-} else if (day === 'saturday' || day === 'sunday') {
-	console.log('Enloy the weekend :D');
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to codinng meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enloy the weekend :D");
 } else {
-	console.log('Not a valid day!');
+  console.log("Not a valid day!");
 }
-
 
 // Statements and Expressions
 
-3 + 4
-1991
-true && false && !false
+3 + 4;
+1991;
+true && false && !false;
 
 if (23 > 10) {
-	const str = '23 is bigger';
+  const str = "23 is bigger";
 }
 
-
-const me = 'Stoy';
+const me = "Stoy";
 console.log(`I'm ${2037 - 1991} years old ${me}`);
-
-
 
 // The Conditional (Ternary) Operator
 
 const age = 23;
-age >= 18 ? console.log('I Like to drink wine 🍷') : console.log('I like to drink water 💧');
+age >= 18
+  ? console.log("I Like to drink wine 🍷")
+  : console.log("I like to drink water 💧");
 
-
-const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
 console.log(drink);
 
 let drink2;
 if (age >= 18) {
-	drink2 = 'wine 🍷';
+  drink2 = "wine 🍷";
 } else {
-	drink2 = 'water 💧';
+  drink2 = "water 💧";
 }
 console.log(drink2);
 
@@ -419,14 +419,9 @@ const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 */
 
-
 const bill = 275;
 
 const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
-
-
-
-
-
-
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);
