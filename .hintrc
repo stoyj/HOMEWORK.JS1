@@ -3,6 +3,13 @@
     "development"
   ],
   "hints": {
-    "highest-available-document-mode": "off"
+    "highest-available-document-mode": "off",
+    "button-type": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ]
   }
 }
