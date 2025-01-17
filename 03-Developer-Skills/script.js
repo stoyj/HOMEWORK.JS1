@@ -205,7 +205,7 @@ function analyzeWorkWeek(dailyHours) {
 }
 
 // Test data
-const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 5, 0]; // [7.5, 8, 6.5, 0, 8.5, 4, 0];
 const analysis = analyzeWorkWeek(weeklyHours);
 console.log(analysis);
 
@@ -214,8 +214,8 @@ console.log(analysis);
 /* {
   "totalHours": 34.5,
   "averageDailyHours": 4.9,
-  "dayWithMostHours": 4,
+  "dayWithMostHours": 5, 4; // false;
   "daysWorked": 5,
-  "isFullTime": false
+  "isFullTime": true; // false
 }
 */
