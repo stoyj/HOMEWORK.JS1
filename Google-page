@@ -142,27 +142,34 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 ДАННИ ОТ ТЕСТА 2: [12, 5, -5, 0, 4]
 */
 
-// 1) Understanding the problem
+// 1 Understanding the problem
 // - Array transformed to string, separated by ...
 // - What is the X days? Answer: index + 1
 
-// 2) Breaking up into sub-problems
+// 2 Breaking up into sub-problems
 // - Transform array into string
 // - Transform each element to string with ºC
 // - Strings needs to contain day (index + 1)
 // - Add ... between elements and start and end of string
 // - Log string to console
 
-const data1 = [17, 21, 23];
-const data2 = [12, 5, -5, 0, 4];
+function printForecast(arr) {
+  let forecastStr = '';
 
-console.log(`... ${data1[0]}ºC ... ${data1[1]}ºC ... ${data1[2]}ºC ...`);
-
-const printForecast = function (arr) {
-  let str = "";
+  // Loop through the array
   for (let i = 0; i < arr.length; i++) {
-    str += `${arr[i]}ºC in ${i + 1} days ... `;
+    forecastStr += `... ${arr[i]}ºC in ${i + 1} days `;
   }
-  console.log("..." + str);
-};
-printForecast(data1);
+
+  // Log the resulting string
+  console.log(forecastStr.trim() + "...");
+}
+
+// Test the function
+const testData1 = [17, 21, 23];
+const testData2 = [12, 5, -5, 0, 4];
+
+printForecast(testData1); // Expected: "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+printForecast(testData2); // Expected: "... 12ºC in 1 days ... 5ºC in 2 days ... -5ºC in 3 days ... 0ºC in 4 days ... 4ºC in 5 days ..."
+
+
