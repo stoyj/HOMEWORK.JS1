@@ -175,7 +175,63 @@ Let's say you're building a time tracking application for freelancers. At some p
 TEST DATA: [7.5, 8, 6.5, 0, 8.5, 4, 0]
 */
 
+// function analyzeWorkWeek(dailyHours) {
+//   // Calculate total hours worked
+//   const totalHours = dailyHours.reduce((sum, hours) => sum + hours, 0);
+
+//   // Calculate average daily hours (round to one decimal place)
+//   const averageDailyHours = parseFloat(
+//     (totalHours / dailyHours.length).toFixed(1)
+//   );
+
+// Find the day with the most hours worked
+//   const maxHours = Math.max(...dailyHours);
+//   const dayWithMostHours = dailyHours.indexOf(maxHours);
+
+//   // Count the number of days worked (days with more than 0 hours)
+//   const daysWorked = dailyHours.filter((hours) => hours > 0).length;
+
+//   // Determine if the week was full-time (worked 35 hours or more)
+//   const isFullTime = totalHours >= 35;
+
+//   // Return the analysis object
+//   return {
+//     totalHours,
+//     averageDailyHours,
+//     dayWithMostHours,
+//     daysWorked,
+//     isFullTime,
+//   };
+// }
+
+// // Test data
+// const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 5, 0]; // [7.5, 8, 6.5, 0, 8.5, 4, 0];
+// const analysis = analyzeWorkWeek(weeklyHours);
+// console.log(analysis);
+
+// Output for the test data
+
+/* {
+  "totalHours": 34.5,
+  "averageDailyHours": 4.9,
+  "dayWithMostHours": 5, 4; // false;
+  "daysWorked": 5,
+  "isFullTime": true; // false
+}
+*/
+
 function analyzeWorkWeek(dailyHours) {
+  // Days of the week
+  const daysOfWeek = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+
   // Calculate total hours worked
   const totalHours = dailyHours.reduce((sum, hours) => sum + hours, 0);
 
@@ -186,7 +242,8 @@ function analyzeWorkWeek(dailyHours) {
 
   // Find the day with the most hours worked
   const maxHours = Math.max(...dailyHours);
-  const dayWithMostHours = dailyHours.indexOf(maxHours);
+  const dayWithMostHoursIndex = dailyHours.indexOf(maxHours);
+  const dayWithMostHours = daysOfWeek[dayWithMostHoursIndex]; // Map index to day name
 
   // Count the number of days worked (days with more than 0 hours)
   const daysWorked = dailyHours.filter((hours) => hours > 0).length;
@@ -205,17 +262,17 @@ function analyzeWorkWeek(dailyHours) {
 }
 
 // Test data
-const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 5, 0]; // [7.5, 8, 6.5, 0, 8.5, 4, 0];
+const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 5, 0];
 const analysis = analyzeWorkWeek(weeklyHours);
 console.log(analysis);
 
-// Output for the test data
-
-/* {
-  "totalHours": 34.5,
-  "averageDailyHours": 4.9,
-  "dayWithMostHours": 5, 4; // false;
-  "daysWorked": 5,
-  "isFullTime": true; // false
+/*
+{
+  totalHours: 34.5,
+  averageDailyHours: 4.9,
+  dayWithMostHours: 'Friday',
+  daysWorked: 5,
+  isFullTime: true,
 }
+
 */
