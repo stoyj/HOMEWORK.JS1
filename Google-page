@@ -173,3 +173,7 @@ printForecast(testData1); // Expected: "... 17ºC in 1 days ... 21ºC in 2 days 
 printForecast(testData2); // Expected: "... 12ºC in 1 days ... 5ºC in 2 days ... -5ºC in 3 days ... 0ºC in 4 days ... 4ºC in 5 days ..."
 
 
+
+
+
+
