@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: block;
 }
 
 body {
-  background-color: rgb(255, 247, 201);
+  background-color: rgb(255, 220, 105);
   font-family: Arial;
   font-size: 20px;
   padding: 50px;
