@@ -32,3 +32,29 @@ const account4 = {
 };
 
 const accounts = [account1, account2, account3, account4];
+
+// Elements
+const labelWelcome = document.querySelector('welcome');
+const labelDate = document.querySelector('date');
+const labelBalance = document.querySelector('.balance_value');
+const labelSumln = document.querySelector('summary_value--in');
+const labelSumOut = document.querySelector('summary_value--out');
+const labelSumlnterets = document.querySelector('summary_value--interest');
+const labelTimer = document.querySelector('.timer');
+
+const containerApp = document.querySelector('.app');
+const containerMovements = document.querySelector('.movements');
+
+const btnLogin = document.querySelector('.login_btn');
+const btnTransfer = document.querySelector('.form_btn--transfer');
+const btnLoan = document.querySelector('.form_btn--loan');
+const btnClose = document.querySelector('.form_btn--close');
+const btnSort = document.querySelector('.btn--sort');
+
+const inputLoginUsername = document.querySelector('.login_input--user');
+const inputLoginPin = document.querySelector('.login_input--pin');
+const inputTransferTo = document.querySelector('.form_input--to');
+const inputTransferAmount = document.querySelector('.form_input--amount');
+const inputLoanAmount = document.querySelector('.form_input--loan-amount');
+const inputCloseUsername = document.querySelector('.form_input--user');
+const inputClosePin = document.querySelector('.form_input--pin');
