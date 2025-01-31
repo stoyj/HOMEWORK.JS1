@@ -58,3 +58,22 @@ const inputTransferAmount = document.querySelector('.form_input--amount');
 const inputLoanAmount = document.querySelector('.form_input--loan-amount');
 const inputCloseUsername = document.querySelector('.form_input--user');
 const inputClosePin = document.querySelector('.form_input--pin');
+
+// Functions
+
+const displayMovements = function (movements, sort = false) {
+  containerMovements.innerHTML = '';
+
+  const movs = sort ? movements.slice().sort((a, b) => a - b) : movements;
+
+  movs.forEach(function (mov, i) {
+    const type = mov > 0 ? 'deposit' : 'withdrawal';
+
+    const html = `<div class='movements_row'>
+    <div class = 'movements_type movements_type--${type}'>${i + 1} ${type}</div>
+    <div class = 'movements_value'>${mov}€</div>
+    </div>`;
+
+    containerMovements.insertAdjacentHTML('afterbegin', html);
+  });
+};
