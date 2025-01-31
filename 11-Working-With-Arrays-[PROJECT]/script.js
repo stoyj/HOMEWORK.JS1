@@ -65,7 +65,6 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 /////////////////////////////////////////////////
 // Functions
-
 const displayMovements = function (movements, sort = false) {
   containerMovements.innerHTML = '';
 
