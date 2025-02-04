@@ -110,7 +110,8 @@ const displayMovements = function (acc, sort = false) {
   // sortedn = !sorted;  Because it gives an error
 
   // This code is correct   = combined; - комбиниран;
-  // const combinedMovsDates = acc.movements.map((mov, i) =>) {
+  // const combinedMovsDates = acc.movements.map((mov, i) =>)
+  //  {
   // movement: mov,
   // date: acc.movementsDates.at(i),
   // }));
