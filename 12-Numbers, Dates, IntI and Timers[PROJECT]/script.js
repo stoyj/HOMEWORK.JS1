@@ -106,6 +106,10 @@ const formatCur = function (value, locale, currency) {
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 
+  const combinedMovsSates = acc.movements.map((mov, i) => {
+    return { dddd };
+  });
+
   const movs = sort
     ? acc.movements.slice().sort((a, b) => a - b)
     : acc.movements;
