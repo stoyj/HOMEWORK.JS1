@@ -3,13 +3,14 @@
     "development"
   ],
   "hints": {
-    "button-type": "off",
+    "disown-opener": "off",
     "axe/forms": [
       "default",
       {
         "label": "off"
       }
     ],
+    "button-type": "off",
     "highest-available-document-mode": "off"
   }
 }
