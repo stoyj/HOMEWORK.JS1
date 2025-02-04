@@ -123,7 +123,7 @@ const displayMovements = function (acc, sort = false) {
     : acc.movements;
 
   // Този е нов-код-Функция
-  // combinedMovsDates.forEach(function (mov, i))
+  // combinedMovsDates.forEach(function (mov, i)) movs.forEach
   movs.forEach(function (mov, i) {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
 
