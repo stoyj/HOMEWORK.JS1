@@ -106,6 +106,15 @@ const formatCur = function (value, locale, currency) {
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 
+  // I don't have to use  displyMovements(currentAccount, !sorted);
+  // sortedn = !sorted;  Because it gives an error
+
+  // This code is correct   = combined; - комбиниран;
+  // const combinedMovsDates = acc.movements.map((mov, i) =>) {
+  // movement: mov,
+  // date: acc.movementsDates.at(i),
+  // }));
+
   const movs = sort
     ? acc.movements.slice().sort((a, b) => a - b)
     : acc.movements;
