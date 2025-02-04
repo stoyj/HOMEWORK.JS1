@@ -115,11 +115,15 @@ const displayMovements = function (acc, sort = false) {
   // movement: mov,
   // date: acc.movementsDates.at(i),
   // }));
+  // if(sort) combinedMovsDates.sort((a, b) => a.movement - b movement);
 
+  // този код може да се изтрие
   const movs = sort
     ? acc.movements.slice().sort((a, b) => a - b)
     : acc.movements;
 
+  // Този е нов-код-Функция
+  // combinedMovsDates.forEach(function (mov, i))
   movs.forEach(function (mov, i) {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
 
